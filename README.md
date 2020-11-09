@@ -20,7 +20,7 @@ Install `pip` using your package manager.
 Then install the latest version of Slypheed2CSV:
 
 ```
-pip install https://github.com/santisoler/slypheed2csv
+pip install https://github.com/santisoler/slypheed2csv/archive/main.zip
 ```
 
 Check your installation by running:
@@ -37,9 +37,9 @@ Export the Slypheed address book into a XML file, for example
 Then use `slypheed2csv` to convert it to a CSV file:
 
 ```
-Slypheed2csv addressbook.xml -o address.csv
+slypheed2csv addressbook.xml -o address.csv
 ```
 
 ## License
 
-[MIT]()
+[MIT](https://github.com/santisoler/slypheed2csv/blob/main/LICENSE)
