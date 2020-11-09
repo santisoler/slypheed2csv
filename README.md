@@ -5,7 +5,7 @@ Convert Slypheed address book to a CSV file.
 > :warning: **Software under heavy development**: This package is on early
 > stages of development, please be very careful when trying to use it for
 > backing up important information. **Keep always the original address book**
-> exported by Slypheed in case something goes wrong. :warning
+> exported by Slypheed in case something goes wrong. :warning:
 
 
 ## How to install
