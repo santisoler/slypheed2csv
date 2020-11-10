@@ -10,16 +10,33 @@ Convert Slypheed address book to a CSV file.
 
 ## How to install
 
-Install `pip` using your package manager.
+### On Ubuntu
 
-- On Ubuntu:
-    ```
-    sudo apt install python3-pip
-    ```
-- On Arch:
-    ```
-    sudo pacman -S python-pip
-    ```
+Install `pip` using your package manager:
+
+```
+sudo apt install python3-pip
+```
+
+Then install the latest version of Slypheed2CSV:
+
+```
+pip3 install https://github.com/santisoler/slypheed2csv/archive/main.zip
+```
+
+Check your installation by running:
+
+```
+slypheed2csv
+```
+
+### On Arch
+
+Install `pip` using your package manager:
+
+```
+sudo pacman -S python-pip
+```
 
 Then install the latest version of Slypheed2CSV:
 
