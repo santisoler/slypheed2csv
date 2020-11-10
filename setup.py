@@ -19,8 +19,8 @@ PLATFORMS = "Any"
 PACKAGES = find_packages()
 ENTRY_POINTS = {"console_scripts": "slypheed2csv = slypheed2csv.slypheed2csv:main"}
 PACKAGE_DATA = {}
-with open("requirements.txt") as f:
-    INSTALL_REQUIRES = f.readlines()
+#  with open("requirements.txt") as f:
+#      INSTALL_REQUIRES = f.readlines()
 PYTHON_REQUIRES = ">=3.6"
 
 if __name__ == "__main__":
@@ -40,6 +40,6 @@ if __name__ == "__main__":
         packages=PACKAGES,
         package_data=PACKAGE_DATA,
         keywords=KEYWORDS,
-        install_requires=INSTALL_REQUIRES,
+        #  install_requires=INSTALL_REQUIRES,
         python_requires=PYTHON_REQUIRES,
     )

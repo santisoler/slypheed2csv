@@ -1,5 +1,4 @@
 import argparse
-import pandas as pd
 import xml.etree.ElementTree as ET
 
 
@@ -31,7 +30,21 @@ def main():
         uid = person.attrib.pop("uid")
         contacts[uid] = person.attrib
 
-    # Create a pd.DataFrame out of the collected dicts
-    # and export it as a CSV file
-    df = pd.DataFrame.from_dict(data=contacts, orient="index")
-    df.to_csv(args.output, index=False)
+    # Get every attribute of the contacts
+    columns = []
+    for person in contacts:
+        for attribute in contacts[person]:
+            if attribute not in columns:
+                columns.append(attribute)
+
+    # Create the CSV file
+    args.output.write(",".join(columns) + "\n")
+    for uid, person in contacts.items():
+        line = []
+        for attribute in columns:
+            if attribute in person:
+                line.append(person[attribute])
+            else:
+                line.append("")
+        line = ",".join(line)
+        args.output.write(line + "\n")

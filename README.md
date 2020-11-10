@@ -30,6 +30,32 @@ Check your installation by running:
 slypheed2csv
 ```
 
+#### Another way
+
+If this didn't work for you (it didn't work for me on Xubuntu 18.04), try the
+following:
+
+1. Install `python3` through `apt`:
+    ```
+    sudo apt install python3
+    ```
+2. Download a zip file containing the latest version of this repository and
+   unzip it:
+    ```
+    wget https://github.com/santisoler/slypheed2csv/archive/main.zip
+    unzip main.zip
+    ```
+3. Change directory to the unzipped one and install `slypheed2csv` by actually
+   running the `setup.py`:
+    ```
+    cd slypheed2csv-main
+    sudo python3 setup.py install
+    ```
+4. Check your installation by running:
+    ```
+    slypheed2csv
+    ```
+
 ### On Arch
 
 Install `pip` using your package manager:
